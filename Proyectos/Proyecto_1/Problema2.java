@@ -16,20 +16,25 @@ formula: A = ((a + b) / 2) * h */
     public static void main(String args[]) {
         // Generamos una nueva instancia del Scanner
         Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        double a, b, h, area;
 
         // Solicitamos los datos al usuario
         System.out.println("Digite el valor del lado a: \t");
-        double a = console.nextDouble();
+        a = console.nextDouble();
         System.out.println("Digite el valor el lado b: \t");
-        double b = console.nextDouble();
+        b = console.nextDouble();
         System.out.println("Digite el valor de la altura: \t");
-        double h = console.nextDouble();
+        h = console.nextDouble();
 
         // Calculamos el área del trapecio
-        double area = ((a + b) / 2) * h;
+        area = ((a + b) / 2) * h;
 
         // Imprimimos en pantalla el área del trapecio
         System.out.printf("\nEl area del trapecio es de %.2f unidades.", area);
+        
+        // Finalizamos el programa
         System.out.println("\n\nFin del programa.");
+        System.exit(0);
     }
 }

@@ -17,27 +17,31 @@ con 4 decimales. */
     public static void main(String args[]) {
         // Generamos una nueva instancia del Scanner y el valor de pi
         Scanner console = new Scanner(System.in);
-        double pi = 3.1416;
+        // Definimos a las variables que vamos a utilizar
+        double pi = 3.1416, radio, altura, volCono, volCilindro, diff;
 
         // Solicitamos al usuario el radio y la altura del círculo
         System.out.println("Digite el valor del radio: \t");
-        double radio = console.nextDouble();
+        radio = console.nextDouble();
         System.out.println("Digite el valor de la altura: \t");
-        double altura = console.nextDouble();
+        altura = console.nextDouble();
 
         // Calculamos los volúmenes y la diferencia
         // Cono     pi * r^2 * h / 3
-        double volCono = (pi * Math.pow(radio, 2) * altura) / 3;
+        volCono = (pi * Math.pow(radio, 2) * altura) / 3;
         // Cilindro     pi * r^2 * h
-        double volCilindro = pi * Math.pow(radio, 2) * altura;
+        volCilindro = pi * Math.pow(radio, 2) * altura;
         // Diferencia
-        double diff = volCilindro - volCono;
+        diff = volCilindro - volCono;
 
         // Imprimimos los resultados
         System.out.println("\nLos resultados son:");
         System.out.printf("Volumen del cono: %.4f unidades.\n", volCono);
         System.out.printf("Volumen del cilindro: %.4f unidades.\n", volCilindro);
         System.out.printf("Diferencia: %.4f unidades.\n", diff);
+        
+        // Finalizamos el programa
         System.out.println("\n\nFin del programa.");
+        System.exit(0);
     }
 }

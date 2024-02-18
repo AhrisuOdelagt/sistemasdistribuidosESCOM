@@ -1,0 +1,1269 @@
+// Franco Olvera Demian Oder	2021630278
+// Sistemas Distribuidos	7CM1
+// Proyecto 1
+
+// Problema 1
+import java.util.Scanner;
+
+public class Problema1 {
+
+    /* Dados los valores del radio de un círculo y su altura, calcular: el volumen del cono, el volumen
+del cilindro e indicar la diferencia de volumen entre ambos. Los resultados deben mostrarse en pantalla
+con 4 decimales. */
+    public static void main(String args[]) {
+        // Generamos una nueva instancia del Scanner y el valor de pi
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        double pi = 3.1416, radio, altura, volCono, volCilindro, diff;
+
+        // Solicitamos al usuario el radio y la altura del círculo
+        System.out.println("Digite el valor del radio: \t");
+        radio = console.nextDouble();
+        System.out.println("Digite el valor de la altura: \t");
+        altura = console.nextDouble();
+
+        // Calculamos los volúmenes y la diferencia
+        // Cono     pi * r^2 * h / 3
+        volCono = (pi * Math.pow(radio, 2) * altura) / 3;
+        // Cilindro     pi * r^2 * h
+        volCilindro = pi * Math.pow(radio, 2) * altura;
+        // Diferencia
+        diff = volCilindro - volCono;
+
+        // Imprimimos los resultados
+        System.out.println("\nLos resultados son:");
+        System.out.printf("Volumen del cono: %.4f unidades.\n", volCono);
+        System.out.printf("Volumen del cilindro: %.4f unidades.\n", volCilindro);
+        System.out.printf("Diferencia: %.4f unidades.\n", diff);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 2
+import java.util.Scanner;
+
+public class Problema2 {
+
+    /* Escribe un programa que calcule el área de un trapecio de lados a y b y altura h mediante la
+formula: A = ((a + b) / 2) * h */
+    public static void main(String args[]) {
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        double a, b, h, area;
+
+        // Solicitamos los datos al usuario
+        System.out.println("Digite el valor del lado a: \t");
+        a = console.nextDouble();
+        System.out.println("Digite el valor el lado b: \t");
+        b = console.nextDouble();
+        System.out.println("Digite el valor de la altura: \t");
+        h = console.nextDouble();
+
+        // Calculamos el área del trapecio
+        area = ((a + b) / 2) * h;
+
+        // Imprimimos en pantalla el área del trapecio
+        System.out.printf("\nEl area del trapecio es de %.2f unidades.", area);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 3
+import java.util.Scanner;
+
+public class Problema3 {
+    
+    /* Utilizando operaciones de división entera y módulo, convertir un número dado en segundos a su
+equivalente en horas, minutos y segundos. Ejemplo, el valor en segundos de 3725 segundos es igual a 62
+minutos, lo cual es igual a 1 hora, 2 minutos y 5 segundos. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int tiempo, tiempo_1, segundos, horas, minutos;
+        
+        // Solicitamos el número al usuario
+        System.out.println("Digite el tiempo a convertir: \t");
+        tiempo = console.nextInt();
+        // Convertimos el número a minutos y segundos
+        tiempo_1 = tiempo / 60;
+        segundos = tiempo % 60;
+        // Convertimos el número a horas y minutos
+        horas = tiempo_1 / 60;
+        minutos = tiempo_1 % 60;
+        
+        // Imprimimos el resultado
+        System.out.println("El tiempo " + tiempo + " equivale a " + horas + " horas, " + minutos + " minutos y " + segundos + " segundos.");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 4
+import java.util.Scanner;
+
+public class Problema4 {
+
+    /*Escriba un programa que calcule las dos respuestas de x en formato decimal (en caso de que no
+existan soluciones reales debe indicarlo al usuario con un mensaje) que son soluciones de una ecuación
+de segundo grado. */
+    public static void main(String args[]) {
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        double a, b, c, d, x1, x2;
+
+        // Solicitamos los valores de a, b & c
+        System.out.println("Digite el valor de a: \t");
+        a = console.nextDouble();
+        System.out.println("Digite el valor de b: \t");
+        b = console.nextDouble();
+        System.out.println("Digite el valor de c: \t");
+        c = console.nextDouble();
+
+        // Verificamos si la ecuación tiene soluciones reales
+        d = Math.pow(b, 2) - 4 * a * c;
+        System.out.println("d = " + d);
+        // Terminamos el programa de no ser así
+        if (d < 0) {
+            System.out.println("La ecuacion no tiene soluciones reales.");
+            System.out.println("\n\nFin del programa");
+            System.exit(1);
+        }
+
+        // Calculamos los valores de x1 & x2
+        x1 = ((-1 * b) + Math.sqrt(d)) / (2 * a);
+        x2 = ((-1 * b) - Math.sqrt(d)) / (2 * a);
+
+        // Imprimimos los resultados en pantalla
+        System.out.println("\nLos resultados son:");
+        System.out.printf("El valor de x1 es: %.2f\n", x1);
+        System.out.printf("El valor de x2 es: %.2f\n", x2);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 5
+import java.util.Scanner;
+
+public class Problema5 {
+    
+    /* Escribe un programa para convertir una calificación de 0 a 100 al sistema A-F utilizando la
+siguiente tabla: (A - Muy bien) = 90-100, (B = Bien) 80 - 89, (C - Suficiente) = 60 -79, (F - No suficiente) = 0
+- 59. El usuario debe escribir la calificación con número e indicar si quiere que la conversión le muestre la
+letra (A, B, C, F) o la descripción correspondiente (Muy Bien, Bien, Suficiente, No Suficiente). */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int calif;
+        String sistema;
+        
+        // Solicitamos la calificación y el medio para mostrar su equivalencia
+        System.out.println("Digite el valor de la calificacion: \t");
+        while(true) {
+            calif = console.nextInt();
+            if(calif >= 0 && calif <= 100) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente");
+            }
+        }
+        console.nextLine();
+        System.out.println("Desea utilizar el sistema A-F? (y/n): \t");
+        while(true) {
+            sistema = console.nextLine();
+            if("y".equals(sistema) || "n".equals(sistema)) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente");
+            }
+        }
+        
+        // Respondemos con el valor de la calificación
+        if(calif >= 0 && calif <= 59) {
+            if("y".equals(sistema)) {
+                    System.out.println("La calificacion es: F.");
+                }
+            else {
+                System.out.println("La calificacion es: No Suficiente.");
+            }
+        }
+        else if(calif >= 60 && calif <= 79) {
+            if("y".equals(sistema)) {
+                    System.out.println("La calificacion es: C.");
+                }
+            else {
+                System.out.println("La calificacion es: Suficiente.");
+            }
+        }
+        else if(calif >= 80 && calif <= 89) {
+            if("y".equals(sistema)) {
+                    System.out.println("La calificacion es: B.");
+                }
+            else {
+                System.out.println("La calificacion es: Bien.");
+            }
+        }
+        else {
+            if("y".equals(sistema)) {
+                    System.out.println("La calificacion es: A.");
+                }
+            else {
+                System.out.println("La calificacion es: Muy Bien.");
+            }
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 6
+import java.util.Scanner;
+
+public class Problema6 {
+    
+    /* La cadena de Comida “Hamburguesas Teresita” quiere dar una promoción a las mujeres entre 16
+y 22 años o aquellas con nombre “Teresa”, “Tere” o “Teresita”, en estos casos, el sistema debe dar un
+descuento de 7% en el valor de la compra. Escribir un programa que solicite el valor de la compra, el
+primer nombre, edad y sexo del cliente e indique el monto final a pagar. El nombre del cliente puede ser
+escrito en mayúsculas o minúsculas sin que esto afecte el cálculo final. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        double valorCompra;
+        String primerNombre, sexo;
+        int edad;
+        boolean descuento_1 = false, descuento_2 = false, descuento_3 = false, descuento_f = false;
+        
+        // Solicitamos la información al cliente de “Hamburguesas Teresita”
+        System.out.println("Digite el valor de su compra: \t");
+        valorCompra = console.nextDouble();
+        console.nextLine();
+        System.out.println("Escriba su primer nombre: \t");
+        primerNombre = console.nextLine().toLowerCase();
+        System.out.println("Escriba su edad: \t");
+        while(true) {
+            edad = console.nextInt();
+            if(edad >= 0) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente.");
+            }
+        }
+        console.nextLine();
+        System.out.println("Escriba su sexo (m/f): \t");
+        while(true) {
+            sexo = console.nextLine();
+            if("m".equals(sexo) || "f".equals(sexo)) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente.");
+            }
+        }
+        
+        // Verificamos si se cumple alguna condición para el descuento
+        if("f".equals(sexo)) {
+            descuento_1 = true;
+        }
+        if((edad >= 16 && edad <= 22)) {
+            descuento_2 = true;
+        }
+        if(("teresa".equals(primerNombre) || "tere".equals(primerNombre) || "teresita".equals(primerNombre))) {
+            descuento_3 = true;
+        }
+        // Definimos si hay descuento o no según lo recopilado
+        if((descuento_1 && descuento_2) || (descuento_1 && descuento_3)) {
+            descuento_f = true;
+        }
+        
+        // Regresamos el monto a pagar
+        if(descuento_f) {
+            valorCompra = valorCompra - valorCompra * 0.07;
+        }
+        System.out.printf("\nEl monto a pagar es de: $%.2f.", valorCompra);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 7
+import java.util.Scanner;
+
+public class Problema7 {
+    
+    /* La Comisión Federal de Electricidad cobra el consumo de electricidad de acuerdo con un
+tabulador basado en los kilowatts consumidos en el periodo. La tabla es la siguiente:
+Costo del kW para Hogares:
+De 0 a 250 kW el costo por kW es de $0.65
+De 251 a 500 kW el costo por kW es de $0.85
+De 501 a 1200 kW el costo por kW es de $1.50
+De 1201 a 2100 kW el costo por kW es de $2.50 De
+2101 kW hacia arriba el costo por kW es de $3.00
+Costo del kW para Negocios:
+$5.00, el costo es fijo por kilowatt sin importar la cantidad consumida.
+Ejemplo:
+a) Si en el hogar se consumen 737 kW durante el periodo entonces el total a pagar es de:
+250*0.65 + 250*0,85 + 237* 1.50 = 162.50 + 212.50 + 355.50 = $730.50
+b) Si en un negocio se consumen 250 kW, el valor a pagar serían de: 250* 5 = $1,250
+Escribe un programa que pregunte la cantidad de kW consumidos, si el cliente tiene un contrato de
+Hogar o de Negocio y dé como resultado la cantidad a pagar. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        double kilowatts, pago = 0.0;
+        String contrato;
+        
+        // Solicitamos la información al cliente de la empresa
+        System.out.println("Digite el total de kW consumidos en el periodo: \t");
+        while(true) {
+            kilowatts = console.nextDouble();
+            if(kilowatts >= 0) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente.");
+            }
+        }
+        console.nextLine();
+        System.out.println("Escriba si su contrato es de hogar o negocio (h/n): \t");
+        while(true) {
+            contrato = console.nextLine();
+            if("h".equals(contrato) || "n".equals(contrato)) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente.");
+            }
+        }
+        
+        // Calculamos la cantidad a pagar
+        if("h".equals(contrato)) {
+            if(kilowatts >= 0 && kilowatts <= 250) {
+                pago = kilowatts * 0.65;
+            }
+            else if(kilowatts >= 251 && kilowatts <= 500) {
+                kilowatts = kilowatts - 250;
+                pago = (250 * 0.65) + (kilowatts * 0.85);
+            }
+            else if(kilowatts >= 501 && kilowatts <= 1200) {
+                kilowatts = kilowatts - 500;
+                pago = (250 * 0.65) + (250 * 0.85) + (kilowatts * 1.50);
+            }
+            else if(kilowatts >= 1201 && kilowatts <= 2100) {
+                kilowatts = kilowatts - 1200;
+                pago = (250 * 0.65) + (250 * 0.85) + (700 * 1.50) + (kilowatts * 2.50);
+            }
+            else if(kilowatts >= 2101) {
+                kilowatts = kilowatts - 2100;
+                pago = (250 * 0.65) + (250 * 0.85) + (700 * 1.50) + (900 * 2.50) + (kilowatts * 3);
+            }
+        }
+        else {
+            pago = kilowatts * 5;
+        }
+        
+        // Regresamos la cantidad a pagar
+        System.out.printf("\nLa cantidad a pagar es de: $%.2f.", pago);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 8
+import java.util.Scanner;
+
+public class Problema8 {
+    /*Escribe un programa que pida 2 números e indique si uno es múltiplo del otro, ejemplo: 2 y 4, el
+4 es múltiplo de 2; otro ejemplo 9 y 3, el 9 es múltiplo de 3. */
+    public static void main(String args[]) {
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int a, b, M, m;
+        boolean multiplos = false;
+        
+        // Le solicitamos al usuario dos numeros cualesquiera
+        System.out.println("Escriba el numero a: \t");
+        a = console.nextInt();
+        System.out.println("Escriba el numero b: \t");
+        b = console.nextInt();
+        
+        // Detectamos al numero mayor
+        if((a - b) >= 0) {
+            M = a;
+            m = b;
+        }
+        else {
+            M = b;
+            m = a;
+        }
+        
+        // Determinamos si son múltiplos o no
+        if((M % m) == 0) {
+            multiplos = true;
+        }
+        
+        // Regresamos el resultado
+        if(multiplos) {
+            System.out.printf("\nEl numero %d es multiplo del numero %d.", M, m);
+        }
+        else {
+            System.out.println("\nLos numeros no son multiplos.");
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 9
+import java.util.Scanner;
+
+public class Problema9 {
+
+    /* Escribe un programa que reciba un número en el rango de 1 a 3000 y lo convierta en número
+romano. Ejemplo: 1997 sería MCMXCVII */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int num, unidad = 0, decena = 0, centena = 0, millar = 0;
+        String unidad_rom, decena_rom, centena_rom, millar_rom;
+
+        // Solicitamos el número al usuario
+        System.out.println("Escribe el numero a convertir: \t");
+        while(true) {
+            num = console.nextInt();
+            if(num >= 0 && num <= 3000) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente.");
+            }
+        }
+        console.nextLine();
+
+        // Calculamos los dígitos del número
+        if ((num / 10) == 0) {
+            unidad = num;
+        }
+        else if ((num / 100) == 0) {
+            decena = num / 10;
+            unidad = num - (decena * 10);
+        }
+        else if ((num / 1000) == 0) {
+            centena = num / 100;
+            decena = (num - (centena * 100)) / 10;
+            unidad = num - (centena * 100) - (decena * 10);
+        }
+        else if ((num / 10000) == 0) {
+            millar = num / 1000;
+            centena = (num - (millar * 1000)) / 100;
+            decena = (num - (millar * 1000) - (centena * 100)) / 10;
+            unidad = num - (millar * 1000) - (centena * 100) - (decena * 10);
+        }
+        
+        // Sustituimos por numeros romanos
+        // Unidades
+        switch(unidad) {
+            case 1 -> unidad_rom = "I";
+            case 2 -> unidad_rom = "II";
+            case 3 -> unidad_rom = "III";
+            case 4 -> unidad_rom = "IV";
+            case 5 -> unidad_rom = "V";
+            case 6 -> unidad_rom = "VI";
+            case 7 -> unidad_rom = "VII";
+            case 8 -> unidad_rom = "VIII";
+            case 9 -> unidad_rom = "IX";
+            default -> unidad_rom = ""; 
+        }
+        // Decenas
+        switch(decena) {
+            case 1 -> decena_rom = "X";
+            case 2 -> decena_rom = "XX";
+            case 3 -> decena_rom = "XXX";
+            case 4 -> decena_rom = "XL";
+            case 5 -> decena_rom = "L";
+            case 6 -> decena_rom = "LX";
+            case 7 -> decena_rom = "LXX";
+            case 8 -> decena_rom = "LXXX";
+            case 9 -> decena_rom = "XC";
+            default -> decena_rom = ""; 
+        }
+        // Centenas
+        switch(centena) {
+            case 1 -> centena_rom = "C";
+            case 2 -> centena_rom = "CC";
+            case 3 -> centena_rom = "CCC";
+            case 4 -> centena_rom = "CD";
+            case 5 -> centena_rom = "D";
+            case 6 -> centena_rom = "DC";
+            case 7 -> centena_rom = "DCC";
+            case 8 -> centena_rom = "DCCC";
+            case 9 -> centena_rom = "CM";
+            default -> centena_rom = ""; 
+        }
+        // Millares
+        switch(millar) {
+            case 1 -> millar_rom = "M";
+            case 2 -> millar_rom = "MM";
+            case 3 -> millar_rom = "MMM";
+            default -> millar_rom = ""; 
+        }
+        
+        // Regresamos el número romano
+        System.out.println("\nEl numero romano equivalente es: " + millar_rom + centena_rom + decena_rom + unidad_rom + ".");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 10
+import java.util.Scanner;
+
+public class Problema10 {
+
+    /*Escribe un programa que solicite al usuario un número entero y dé como resultado el factorial de
+ese número. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int n, factorial;
+        
+        // Solicitamos el número al usuario
+        System.out.println("Digite el numero del que desea calcular el factorial: \t");
+        while(true) {
+            n = console.nextInt();
+            if(n >= 0) {
+                break;
+            }
+            else {
+                System.out.println("Entrada invalida. Intente nuevamente.");
+            }
+        }
+        console.nextLine();
+        
+        // Calculamos el factorial de dicho número
+        if(n == 0 || n == 1) {
+            factorial = 1;
+        }
+        else {
+            factorial = n;
+            for(int i = n; i > 1; i--) {
+                factorial = factorial * (i - 1);
+            }
+        }
+        
+        // Mostramos el resultado en pantalla
+        System.out.printf("\nEl factorial de %d es: %d.", n, factorial);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 11
+public class Problema11 {
+    
+    /* Encontrar los números entre el 1 y el 5000 que cumplen la regla de que la suma del cubo de sus
+dígitos es igual al número mismo. Ejemplo: 153=13+53+33 */
+    public static void main(String args[]){
+        // Definimos a las variables que vamos a utilizar
+        int suma, unidad, decena, centena, millar;
+        
+        // Iniciamos el ciclo for
+        for(int i = 1; i <= 5000; i++) {
+            if ((i / 10) == 0) {
+                unidad = i;
+                suma = unidad * unidad * unidad;
+                if(suma == i) {
+                    System.out.println(i);
+                }
+            }
+            else if((i / 100) == 0) {
+                decena = i / 10;
+                unidad = i - (decena * 10);
+                suma = (unidad * unidad * unidad) + (decena * decena * decena);
+                if(suma == i) {
+                    System.out.println(i);
+                }
+            }
+            else if((i / 1000) == 0) {
+                centena = i / 100;
+                decena = (i - (centena * 100)) / 10;
+                unidad = i - (centena * 100) - (decena * 10);
+                suma = (unidad * unidad * unidad) + (decena * decena * decena) + (centena * centena * centena);
+                if(suma == i) {
+                    System.out.println(i);
+                }
+            }
+            else if((i / 10000) == 0) {
+                millar = i / 1000;
+                centena = (i - (millar * 1000)) / 100;
+                decena = (i - (millar * 1000) - (centena * 100)) / 10;
+                unidad = i - (millar * 1000) - (centena * 100) - (decena * 10);
+                suma = (unidad * unidad * unidad) + (decena * decena * decena) + (centena * centena * centena) + (millar * millar * millar);
+                if(suma == i) {
+                    System.out.println(i);
+                }
+            }
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 12
+public class Problema12 {
+    
+    /* Inversiones. Calcular cuánto dinero tendría en una cuenta de ahorro al final de 20 años si al inicio
+de cada año añado 500 dólares (solo de los años 1 al 10), el rendimiento anual es de 5% y
+reinvierto las ganancias. */
+    public static void main(String args[]) {
+        // Definimos a las variables que vamos a utilizar
+        double monto = 0, ahorro = 0;
+        
+        // Iniciamos el ciclo for
+        for(int i = 1; i <= 20; i++) {
+            if(i >= 1 && i <= 10) {
+                monto = monto + 500;
+                monto = monto + (monto * 0.05);
+            }
+            else {
+                monto = monto + (monto * 0.05);
+            }
+        }
+        
+        // Regresamos el ahorro final
+        ahorro = monto;
+        System.out.printf("El ahorro final tras los 20 anios es de: $%.2f", ahorro);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 13
+import java.util.Scanner;
+
+public class Problema13 {
+    
+    /* Escribir un programa que reciba una cadena de caracteres y la imprima al revés. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        String cadena, cadena_inv = "";
+        
+        // Solicitamos al usuario la cadena a invertir
+        System.out.println("Escriba la cadena a invertir: \t");
+        cadena = console.nextLine();
+        
+        // Invertimos la cadena
+        for(int i = cadena.length() - 1; i >= 0; i--) {
+            cadena_inv = cadena_inv.concat(String.valueOf(cadena.charAt(i)));
+        }
+        
+        // Retormamos la cadena invertida
+        System.out.println("La cadena invertida es: " +  cadena_inv + ".");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 14
+import java.util.Scanner;
+
+public class Problema14 {
+    
+    /* Escribe un programa que solicite un número al usuario y entonces mostrar los números de 5 en 5
+desde el número indicado hasta 150. Ejemplo: si el usuario introduce el número 27, la secuencia sería
+27, 32, 37, 42, 47..... 142, 147. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int n;
+        
+        // Solicitamos el número al usuario
+        System.out.println("Digite el numero a operar: \t");
+        n = console.nextInt();
+        
+        // Mostramos las adiciones
+        System.out.println("\nLos numeros son: ");
+        while(n <= 150) {
+            System.out.println(n);
+            n += 5;
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 15
+import java.util.Scanner;
+
+public class Problema15 {
+    
+    /* En este programa la computadora debe elegir un número al azar entre 1 y 100 y solicitará al
+usuario que “adivine” el número. A cada intento del usuario la computadora debe indicar si el número
+que el usuario introdujo es mayor o menor que el número prefijado. El programa debe terminar cuando
+el usuario “adivine” el número o introduzca el número “0” para salir. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int n = 0, n_usuario = 0;
+        
+        // Generamos un numero aleatorio del 1 al 100;
+        n = (int)(Math.random() * 100 + 1);
+        
+        // Solicitamos el numero al usuario dentro de un bucle para adivinar
+        while(true) {
+            // Solicitamos el numero
+            System.out.println("Digite un numero para intentar adivinarlo: \t");
+            while(true) {
+                n_usuario = console.nextInt();
+                if(n_usuario >= 0 && n_usuario <= 100){
+                    break;
+                }
+                else {
+                    System.out.println("Entrada invalida. Intente nuevamente.");
+                }
+            }
+            console.nextLine();
+            
+            // Verificamos si el numero que ingresó el usuario es acertado o no
+            if(n == n_usuario) {
+                System.out.println("\nHa acertado con el numero.");
+                break;
+            }
+            else if(n_usuario == 0) {
+                System.out.println("\nHa salido del programa.");
+                break;
+            }
+            else if(n > n_usuario) {
+                System.out.println("\nEl numero ingresado es menor. Intente nuevamente.");
+            }
+            else {
+                System.out.println("\nEl numero ingresado es mayor. Intente nuevamente.");
+            }
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 16
+import java.util.Scanner;
+
+public class Problema16 {
+    
+    /* El programa debe leer números mientras sean diferentes de 0. Posteriormente calcular la suma
+de los cuadrados de los números leídos. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        double numeros[] = new double[100], resultado = 0, n = 0;
+        int i = 0;
+        
+        // Solicitamos el numero al usuario dentro de un bucle para guardar sus elecciones
+        while(true) {
+            System.out.println("Digite un numero: \t");
+            n = console.nextDouble();
+            if(n == 0){
+                break;
+            }
+            else {
+                numeros[i] = n;
+                i++;
+            }
+        }
+        
+        // Calculamos los cuadrados de los numeros ingresados
+        i = 0;
+        while(i <= numeros.length - 1) {
+            resultado = resultado + Math.pow(numeros[i], 2);
+            i++;
+        }
+        
+        // Regresamos el resultado
+        System.out.printf("\nEl resultado de la operacion es: %.0f.", resultado);
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 17
+import java.util.Scanner;
+
+public class Problema17 {
+    
+    /* Leer 10 números enteros, guardarlos y mostrarlos en el mismo orden en que fueron
+introducidos. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int i = 0, numeros[] = new int[10];
+        
+        // Solicitamos en bucle los numeros al usuario
+        for(i = 0; i < 10; i++) {
+            System.out.println("Escriba un numero: \t");
+            numeros[i] = console.nextInt();
+        }
+        
+        // Imprimimos los numeros como resultado
+        System.out.print("\nEl arreglo resultante es: [");
+        for(i = 0; i < numeros.length; i++){
+            System.out.printf("%d, ", numeros[i]);
+        }
+        System.out.print("].");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 18
+import java.util.Scanner;
+
+public class Problema18 {
+    
+    /* Escribe un programa que lea 2 arreglos de 10 números (arreglo X, arreglo Y). El programa debe
+mezclarlos en un tercer arreglo (de 20 elementos obviamente) de la siguiente manera: 1er elemento del
+arreglo X, 1er elemento del arreglo Y, 2do elemento del arreglo X, 2do elemento del arreglo Y, 3er
+elemento del arreglo X..., etc. El programa deberá mostrar en pantalla el arreglo resultante. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int i = 0, j = 0, numeros_1[] = new int[10], numeros_2[] = new int[10], numeros_3[] = new int[20];
+    
+        // Solicitamos los numeros al usuario
+        for(i = 0; i < 10; i++) {
+            System.out.println("Escriba un numero: \t");
+            numeros_1[i] = console.nextInt();
+        }
+        for(i = 0; i < 10; i++) {
+            System.out.println("Escriba un numero: \t");
+            numeros_2[i] = console.nextInt();
+        }
+        
+        // Ensamblamos el tercer arreglo
+        for(i = 0; i < 20; i++) {
+            if((i % 2) == 0) {
+                numeros_3[i] = numeros_1[j];
+            }
+            else {
+                numeros_3[i] = numeros_2[j];
+                j++;
+            }
+        }
+        
+        // Imprimimos el arreglo en conjunto
+        System.out.print("\nEl arreglo resultante es: [");
+        for(i = 0; i < numeros_3.length; i++){
+            System.out.printf("%d, ", numeros_3[i]);
+        }
+        System.out.print("].");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 19
+import java.util.Scanner;
+
+public class Problema19 {
+    /* Leer una serie de 10 números, moverlos una posición hacia adelante en el arreglo y mostrar el
+arreglo resultante. Ejemplo, tenemos el siguiente arreglo 1,2,3,4,5, si desplazamos los elementos una
+posición hacia adelante debemos obtener: 5,1,2,3,4. Es decir, el primer elemento se mueve hacia el
+segundo lugar, el segundo al tercero, etc., y el último al primero. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int i = 0, j = 0, n1 = 0, n2 = 0, pos = 0, numeros[] = new int[10];
+        
+        // Solicitamos al usuario que ingrese los numeros y cuantas posiciones quiere moverlos
+        for(i = 0; i < 10; i++) {
+            System.out.println("Escriba un numero: \t");
+            numeros[i] = console.nextInt();
+        }
+        System.out.println("\nDigite cuantas posiciones quiere mover los numeros: \t");
+        pos = console.nextInt() % 10;
+        
+        // Realizamos el movimiento
+        for(i = 0; i < pos; i++) {
+            for(j = 9; j > 0; j--) {
+                n1 = numeros[j % 10];
+                n2 = numeros[(j - 1) % 10];
+                numeros[j % 10] = n2;
+                numeros[(j - 1) % 10] = n1;
+            }
+        }
+        
+        // Imprimimos el arreglo resultante
+        System.out.print("\nEl arreglo resultante es: [");
+        for(i = 0; i < numeros.length; i++){
+            System.out.printf("%d, ", numeros[i]);
+        }
+        System.out.print("].");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 20
+public class Problema20 {
+    
+    /* Escribe un programa que genere 10 números al azar y los almacene en un arreglo. El programa
+debe mostrar el arreglo e indicar cuál es el mayor y cuál es el menor de los números. */
+    public static void main(String args[]){
+        // Definimos a las variables que vamos a utilizar
+        int i = 0, n = 0, n1 = 0, n2 = 0, numeros[] = new int[10];
+        
+        // Llenamos el arreglo con numeros al azar del 0 al 100
+        for(i = 0; i < numeros.length; i++) {
+            numeros[i] = (int)(Math.random() * 100 + 1);
+        }
+        
+        // Hallamos el numero menor y el mayor
+        n1 = numeros[0];
+        for(i = 0; i < numeros.length; i++) {
+            n = numeros[i];
+            if(n >= n1) {
+               n1 = n;
+            }
+        }
+        n2 = numeros[0];
+        for(i = 0; i < numeros.length; i++) {
+            n = numeros[i];
+            if(n <= n2) {
+               n2 = n;
+            }
+        }
+        
+        // Imprimimos el arreglo y los números
+        System.out.print("\nEl arreglo aleatorio es: [");
+        for(i = 0; i < numeros.length; i++){
+            System.out.printf("%d, ", numeros[i]);
+        }
+        System.out.print("].");
+        System.out.println("\nEl numero mayor es: " + n1 + ".");
+        System.out.println("El numero menor es: " + n2 + ".");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 21
+public class Problema21 {
+    
+    /* Escribe un programa que lea un arreglo bidimensional de 5x5 y muestre la suma de la diagonal
+principal sin utilizar ciclos anidados. “En álgebra lineal, la diagonal principal de una matriz cuadrada
+contiene los elementos situados desde A(1,1) hasta A(N,N). */
+    public static void main(String args[]){
+        // Definimos a las variables que vamos a utilizar
+        int i = 0, res = 0, numeros[][] = new int[5][5];
+        
+        // Llenamos el arreglo con numeros al azar del 0 al 100
+        for(i = 0; i < numeros.length; i++) {
+            numeros[i][0] = (int)(Math.random() * 100 + 1);
+            numeros[i][1] = (int)(Math.random() * 100 + 1);
+            numeros[i][2] = (int)(Math.random() * 100 + 1);
+            numeros[i][3] = (int)(Math.random() * 100 + 1);
+            numeros[i][4] = (int)(Math.random() * 100 + 1);
+        }
+        
+        // Leemos y sumamos la diagonal
+        for(i = 0; i < numeros.length; i++) {
+            res = res + numeros[i][i];
+        }
+        
+        // Imprimimos el arreglo bidimensional y el resultado de la suma
+        System.out.print("\nEl arreglo bidimensional 5x5 es: \n[");
+        for(i = 0; i < numeros.length; i++) {
+            System.out.printf("%d, ", numeros[i][0]);
+            System.out.printf("%d, ", numeros[i][1]);
+            System.out.printf("%d, ", numeros[i][2]);
+            System.out.printf("%d, ", numeros[i][3]);
+            System.out.printf("%d, ", numeros[i][4]);
+            if(i == numeros.length - 1) {
+                System.out.print("].");
+            }
+            else {
+                System.out.println("");
+            }
+        }
+        System.out.println("\nEl valor de la suma de los valores en la diagonal es: " + res + ".");
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 22
+import java.util.Scanner;
+
+public class Problema22 {
+    
+    /* Escribe un programa que solicite al usuario los elementos de dos matrices (una matriz de 3
+renglones x3 columnas por una de 2 renglones x3 columnas). El programa debe realizar la multiplicación
+de ambas matrices y mostrar el resultado. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int i = 0, j = 0, k = 0;
+        double matriz1[][] = new double[3][3], matriz2[][] = new double[3][2], matriz3[][] = new double[3][2];
+        
+        // Pedimos los valores de la matriz 3x3
+        System.out.println("Valores de la matriz 3x3: ");
+        for(i = 0; i < matriz1.length; i++){
+            for(j = 0; j < matriz1[0].length; j++){
+                System.out.printf("Escriba el valor de la posicion [%d][%d]: \t", i + 1, j + 1);
+                matriz1[i][j] = console.nextDouble();
+            }
+        }
+        // Pedimos los valores de la matriz 3x2
+        System.out.println("\nValores de la matriz 3x2: ");
+        for(i = 0; i < matriz2.length; i++){
+            for(j = 0; j < matriz2[0].length; j++){
+                System.out.printf("Escriba el valor de la posicion [%d][%d]: \t", i + 1, j + 1);
+                matriz2[i][j] = console.nextDouble();
+            }
+        }
+        
+        // Realizamos la multiplicacion de matrices
+        System.out.println("\nSe multiplican las matrices: ");
+        for(i = 0; i < matriz3.length; i++) {
+            for(j = 0; j < matriz3[0].length; j++) {
+                for(k = 0; k < matriz2.length; k++) {
+                    System.out.printf("Posicion [%d][%d]: %.2f + (%.2f * %.2f)\n", i, j, matriz3[i][j], matriz1[i][k], matriz2[k][j]);
+                    matriz3[i][j] = matriz3[i][j] + (matriz1[i][k] * matriz2[k][j]);
+                }
+                System.out.printf("Posicion [%d][%d]: %.2f\n\n", i, j, matriz3[i][j]);
+            }
+        }
+        
+        // Imprimimos la matriz resultante
+        System.out.print("El resultado de la multiplicacion es: \n[");
+        for(i = 0; i < matriz3.length; i++){
+            for(j = 0; j < matriz3[0].length; j++){
+                System.out.printf("%.2f, ", matriz3[i][j]);
+            }
+            if(i == matriz3.length - 1) {
+                System.out.print("].");
+            }
+            else {
+                System.out.println("");
+            }
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 23
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Problema23 {
+    
+    /* Escribe un programa que solicite edades y estaturas de personas y guarde los datos en un
+archivo de texto de la siguiente manera: edad, estatura. El programa debe crear el archivo en caso de
+que este no exista. En caso de que el archivo ya exista entonces deberá añadir los datos al archivo. El
+programa debe terminar cuando el usuario introduzca el número 0 como edad. */
+    public static void main(String args[]){
+        // Generamos una nueva instancia del Scanner
+        Scanner console = new Scanner(System.in);
+        // Definimos a las variables que vamos a utilizar
+        int edad = 0, estatura = 0;
+        String nombre_archivo = "personas.txt";
+        
+        // Creamos el archivo si no existe
+        File archivo = new File(nombre_archivo);
+        if(!archivo.exists()) {
+            try {
+                archivo.createNewFile();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        
+        
+        // Solicitamos estaturas y edades de personas
+        // Abrimos el printwriter
+        try {
+            PrintWriter pw = new PrintWriter(new FileWriter(nombre_archivo, true));
+            while(true) {
+                System.out.println("Escriba una estatura: \t");
+                estatura = console.nextInt();
+                System.out.println("Escriba una edad (0 para salir): \t");
+                edad = console.nextInt();
+                if(edad == 0) {
+                    pw.close();
+                    break;
+                }
+                else {
+                    pw.println("Nueva persona: ");
+                    pw.println("\tEstatura: " + estatura);
+                    pw.println("\tEdad: " + edad + "\n");
+                }
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}
+
+
+// Problema 24
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Problema24 {
+    
+    /* Leer un archivo de texto que contiene un número entero por cada línea e indicar cuál es el
+número mayor dentro del archivo y el número de renglón en que se encuentra. */
+    public static void main(String args[]){
+        // Definimos a las variables que vamos a utilizar
+        int i = 0, n = 0, n1 = 0, linea = 0;
+        String nombre_archivo = "numeros.txt", lineaStr = "";
+        
+        // Creamos el archivo si no existe
+        File archivo = new File(nombre_archivo);
+        if(!archivo.exists()) {
+            try {
+                archivo.createNewFile();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        
+        // Leemos el contenido del archivo linea por linea
+        int numeros[] = new int[(int)archivo.length()];
+        try {
+            FileReader fr = new FileReader(archivo);
+            BufferedReader br = new BufferedReader(fr);
+            while ((lineaStr = br.readLine()) != null) {
+                numeros[i] = Integer.parseInt(lineaStr);
+                i++;
+            }
+            
+            // Hallamos al número mayor y su posición
+            n1 = numeros[0];
+            for(i = 0; i < numeros.length; i++) {
+                n = numeros[i];
+                if(n >= n1) {
+                   n1 = n;
+                }
+            }
+            for(i = 0; i < numeros.length; i++) {
+                if(numeros[i] == n1) {
+                    linea = i + 1;
+                }
+            }
+            
+            // Retornamos los resultados
+            System.out.println("El numero mas grande en el archivo es: " + n1 + ".");
+            System.out.println("Dicho numero se halla en la linea: " + linea + ".");
+            br.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        // Finalizamos el programa
+        System.out.println("\n\nFin del programa.");
+        System.exit(0);
+    }
+}

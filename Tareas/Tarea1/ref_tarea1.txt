@@ -1,0 +1,11 @@
+https://www.ibm.com/docs/es/i/7.3?topic=platform-java-development-kit
+https://www.ibm.com/mx-es/topics/jre
+https://www.ibm.com/docs/es/i/7.3?topic=platform-java-virtual-machine
+https://www.manualweb.net/java/tipos-datos-primitivos-java/
+https://programacion.abrilcode.com/doku.php?id=bloque2:casting#:~:text=En%20Java%2C%20convertir%20directamente%20un,numéricos%20y%20con%20los%20char%20.
+https://www.tokioschool.com/noticias/que-es-clase-java/#:~:text=Una%20clase%20es%20un%20plan,encuentran%20en%20la%20vida%20cotidiana.
+https://profile.es/blog/clases-wrapper-envoltorio-en-java/#:~:text=¿Qué%20son%20las%20clases%20Wrapper,tratarlos%20como%20si%20fueran%20objetos.
+https://www.arquitecturajava.com/java-garbage-collector/
+https://www.freecodecamp.org/espanol/news/como-imprimir-arreglos-en-java/
+https://www.aluracursos.com/blog/string-args-en-java
+https://www.programarya.com/Cursos/Java/Paquetes#:~:text=Los%20paquetes%20en%20Java%20(packages)%20son%20la%20forma%20en%20la,archivos%20de%20texto%2C%20entre%20otros.
