@@ -9,3 +9,11 @@ https://www.arquitecturajava.com/java-garbage-collector/
 https://www.freecodecamp.org/espanol/news/como-imprimir-arreglos-en-java/
 https://www.aluracursos.com/blog/string-args-en-java
 https://www.programarya.com/Cursos/Java/Paquetes#:~:text=Los%20paquetes%20en%20Java%20(packages)%20son%20la%20forma%20en%20la,archivos%20de%20texto%2C%20entre%20otros.
+https://codigosdeprogramacion.com/cursos/?lesson=11-metodos-de-clase-string
+https://programandoointentandolo.com/2018/10/this-y-super-java.html
+https://materokatti.medium.com/entendiendo-fácilmente-la-herencia-en-java-c8e97cc25cd8
+https://ifgeekthen.nttdata.com/es/polimorfismo-en-java-programación-orientada-objetos
+https://www.euroinnova.mx/blog/latam/override-java#:~:text=Capacítate%20en%20Euroinnova!-,¿Qué%20es%20el%20override%20en%20Java%3F,funcionalidades%20adicionales%20a%20una%20clase.
+https://www.arquitecturajava.com/java-sobrecarga-de-metodos-y-constructores/
+https://www.ibm.com/docs/es/i/7.3?topic=driver-java-exceptions
+https://www.youtube.com/watch?v=mvBX4-5-A4o
