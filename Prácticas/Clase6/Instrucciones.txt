@@ -1,0 +1,17 @@
+CLASE 6
+
+1.- Se ha elaborado el siguiente programa para convertir grados centígrados a Fahrenheit. Determine cual es el error y corríjalo mediante un cast para que dé el valor correcto.
+public class EjerciciosSerie1 {
+   public static void main(String[] args){
+       double c = 20;
+       double f;
+ 
+       f = (9/5) * c + 32.0;
+       System.out.println(f);
+}
+
+2.- Elabore una línea de código que imprima con printf el valor de Math.PI con 10 dígitos decimales
+
+3.- Escriba un programa que cuente del 1 al 15, imprima cada número y luego cuente hacia atrás de dos en dos hasta el 1, imprimiendo nuevamente cada número.
+
+4.- Cada término de la serie de Fibonacci se forma sumando los dos términos anteriores. Elabore un programa similar que cree una serie sumando los tres términos anteriores. El programa deberá imprimir los primeros 20 términos de esta serie.

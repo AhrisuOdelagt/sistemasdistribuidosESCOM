@@ -1,0 +1,86 @@
+CLASE 8
+
+7.- Es posible que un objeto sea miembro de una clase, a esto se le conoce como composición. Sobre la composición se puede decir que:
+“Dado que la herencia es tan importante en la POO, casi siempre se enfatiza mucho su uso, de manera que los programadores novatos pueden llegar a pensar que hay que emplearla en todas partes. Esto puede dar lugar a que se hagan diseños demasiados complejos y complicados. En lugar de esto, en primer lugar, cuando se van a crear nuevas clases debe considerarse la composición, ya que es más simple y flexible. “
+Bruce Eckel - “Thinking in Java”
+Considere el siguiente programa que hace uso de la composición:
+Coordenada.java
+public class Coordenada {
+   private double x, y;
+   public Coordenada(double x, double y) {
+       this.x = x;
+       this.y = y;
+   }
+   //Metodo getter de x
+   public double abcisa( ) { return x; }
+ 
+   //Metodo getter de y
+   public double ordenada( ) { return y; }
+  
+   //Sobreescritura del método de la superclase objeto para imprimir con System.out.println( )
+   @Override
+   public String toString( ) {
+       return "[" + x + "," + y + "]";
+   }
+}
+ 
+Rectangulo.java
+public class Rectangulo {
+   private Coordenada superiorIzq, inferiorDer;
+  
+   public Rectangulo(){
+       superiorIzq = new Coordenada(0,0);
+       inferiorDer = new Coordenada(0,0);
+   }
+  
+   public Rectangulo(double xSupIzq, double ySupIzq, double xInfDer, double yInfDer){
+       superiorIzq = new Coordenada(xSupIzq, ySupIzq);
+       inferiorDer = new Coordenada(xInfDer, yInfDer);       
+   }
+  
+   //Metodo getter de la coordenada superior izquierda
+   public Coordenada superiorIzquierda( ) { return superiorIzq; }
+ 
+   //Metodo getter de la coordenada inferior derecha
+   public Coordenada inferiorDerecha( ) { return inferiorDer; }
+  
+   //Sobreescritura del método de la superclase objeto para imprimir con System.out.println( )
+   @Override
+   public String toString( ) {
+       return "Esquina superior izquierda: " + superiorIzq + "\tEsquina superior derecha:" + inferiorDer + "\n";
+   }
+}
+PruebaRectangulo.java
+public class PruebaRectangulo {
+   public static void main (String[] args) {
+      
+       Rectangulo rect1 = new Rectangulo(2,3,5,1);
+       double ancho, alto;
+      
+      System.out.println("Calculando el área de un rectángulo dadas sus coordenadas en un plano cartesiano:");
+       System.out.println(rect1);
+       alto = rect1.superiorIzquierda().ordenada() - rect1.inferiorDerecha().ordenada();
+       ancho = rect1.inferiorDerecha().abcisa() - rect1.superiorIzquierda().abcisa();
+      System.out.println("El área del rectángulo es = " + ancho*alto);
+   }
+}
+ 
+Para compilar los tres códigos en versiones recientes de Java sólo debe pasar al compilador el código que tiene la función principal:
+javac PruebaRectangulo.java
+Después de ejecutar el código, comprenda su funcionamiento y agregue otro constructor en PruebaRectangulo.java que reciba como parámetros dos objetos Coordenada. El primer parámetro debe ser la coordenada superior izquierda de un rectángulo y el segundo parámetro debe ser su coordenada inferior derecha. Pruebe su constructor enviándole las mismas coordenadas que las enviadas en el constructor original para verificar que da la misma área. Envíe a teams el código nuevo que se haya agregado, así como la captura de pantalla de su programa ejecutándose correctamente.
+
+8.- Si existe un error en la posición de las dos coordenadas (la primera no se encuentra arriba y a la izquierda de la segunda) no deberá ser posible la creación del objeto Rectangulo. Para lo cual será necesario incorporar un bloque try-catch (véase: https://www.geeksforgeeks.org/try-catch-throw-and-throws-in-java/?ref=header_search ).
+Recomendación:
+El código de PruebaRectangulo.java puede contener el bloque try-catch similar a:
+       try {
+           Rectangulo rect1 = new Rectangulo(si, id); 
+           …
+       } catch(IllegalArgumentException e){
+    System.out.println("Error al crear el objeto Rectangulo: " + e.getMessage());
+}
+      
+Mientras que en el constructor de la clase Rectangulo se tiene algo como:
+       if ( … ) {
+           throw new IllegalArgumentException("La primer coordenada no se encuentra arriba y a la izquierda de la segunda");
+       }
+Envíe sus códigos con la solución y la salida del programa cuando se introduce una coordenada errónea y cuando no es errónea.

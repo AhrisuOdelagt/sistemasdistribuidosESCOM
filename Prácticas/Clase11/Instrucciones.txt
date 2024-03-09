@@ -1,0 +1,60 @@
+CLASE 11
+
+El siguiente programa permite generar n CURPs aleatorias. Podemos observar un método estático llamado getCURP . Un método static pertenece a la clase en lugar de a cada instancia de la clase y pueden ser llamados en la clase misma sin necesidad de crear alguna instancia. En ese sentido serían equivalentes a una función, y a diferencia de un método donde se usa el paso por valor, en un método estático se usa el paso por referencia.
+También podemos ver la variable estática num,  lo cual significa que existe sólo una copia en memoria de la variable para la clase entera, en lugar de una por cada instancia de la clase, por eso también se le llama variable de clase.
+Main.java
+class Main
+{
+   static int num = 3;
+   public static void main(String[] args)
+   {                 
+       for(int i = 0; i < num; i++) 
+          System.out.println("CURP = " + getCURP());
+   }
+ 
+   static String getCURP()
+   {
+       String Letra = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       String Numero = "0123456789";
+       String Sexo = "HM";
+       String Entidad[] = {"AS", "BC", "BS", "CC", "CS", "CH", "CL", "CM", "DF", "DG", "GT", "GR", "HG", "JC", "MC", "MN", "MS", "NT", "NL", "OC", "PL", "QT", "QR", "SP", "SL", "SR", "TC", "TL", "TS", "VZ", "YN", "ZS"};
+       int indice;
+      
+      StringBuilder sb = new StringBuilder(18);
+      
+       for (int i = 1; i < 5; i++) {
+          indice = (int) (Letra.length()* Math.random());
+          sb.append(Letra.charAt(indice));       
+       }
+      
+       for (int i = 5; i < 11; i++) {
+          indice = (int) (Numero.length()* Math.random());
+          sb.append(Numero.charAt(indice));       
+       }
+ 
+       indice = (int) (Sexo.length()* Math.random());
+      sb.append(Sexo.charAt(indice));       
+      
+      sb.append(Entidad[(int)(Math.random()*32)]);
+ 
+       for (int i = 14; i < 17; i++) {
+          indice = (int) (Letra.length()* Math.random());
+          sb.append(Letra.charAt(indice));       
+       }
+ 
+       for (int i = 17; i < 19; i++) {
+          indice = (int) (Numero.length()* Math.random());
+          sb.append(Numero.charAt(indice));       
+       }
+      
+       return sb.toString();
+   }           
+}
+ 
+En la siguiente imagen se muestra el formato de una CURP:
+Ejercicio 18:
+Después de leer en la siguiente página  https://www.geeksforgeeks.org/iterators-in-java/  el subtema correspondiente al cursor Iterator de Java, elabore un programa que almacene n CURPs en un ArrayList e imprima todos sus elementos. Posteriormente debe usar al cursor Iterator para eliminar de la lista a todas las CURPs cuyo sexo sea masculino o femenino, según se especifique por el usuario, e imprima al final el arreglo filtrado. Tanto el numero n como el sexo se deben especificar como parámetros del programa.
+
+Ejercicio 19:
+Usando el cursor Iterator elabore un programa que vaya generando CURPs, y las vaya almacenando en un ArrayList en orden ascendente respecto a los primeros cuatro caracteres alfabéticos. Cada que se genera una nueva CURP se debe insertar en el lugar correspondiente de la lista. Al igual que el ejercicio anterior, el número de CURPs se debe introducir en la línea de comandos.
+Sugerencia: Usar el método compareTo de la clase String para determinar el orden de las CURP. El método add de ArrayList puede recibir como parámetro el lugar de la lista donde se hará la inserción. 

@@ -1,0 +1,14 @@
+CLASE 9
+
+Ejercicio 10:
+Después de leer el contenido de la siguiente liga:
+https://codigofacilito.com/articulos/clases-abstractas-interfaces-java
+Reutilice el código del ejercicio 7 en la clase 8 para crear la clase abstracta Figura(idéntica a la que se define en el link) con el método abstracto area(). Posteriormente herede de la clase Figura la clase Rectangulo y programe su método area() para que imprima el área del rectángulo así como el número de lados (variable numeroLados ). Tip: revisar private vs protected. Elabore también un código que contenga la función principal para probar sus clases.
+
+Ejercicio 11:
+Incorpore la interfaz:
+public interface Perimetro{
+  
+  float imprimePerimetro();
+}
+Impleméntela en la clase Rectangulo, y pruébela en la función principal. 
