@@ -1,0 +1,2 @@
+Pese a varios intentos, no pude ejecutar ningún servidor en el Ubuntu que tengo instalado dentro de WSL2. Me había mencionado que no había problema con que ejecutase el código en DOS. Sólo le pido recordar este pequeño detalle.
+Que tenga buen día.

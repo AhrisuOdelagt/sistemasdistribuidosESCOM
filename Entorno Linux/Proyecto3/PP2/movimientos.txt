@@ -1,0 +1,23 @@
+ArrayList<Integer> init = new ArrayList<Integer>();
+		init.add(2);
+		init.add(8);
+		init.add(3);
+		init.add(1);
+		init.add(5);
+		init.add(6);
+		init.add(0);
+		init.add(7);
+		init.add(4);
+(10 mov)
+
+ArrayList<Integer> init = new ArrayList<Integer>();
+		init.add(2);
+		init.add(8);
+		init.add(0);
+		init.add(1);
+		init.add(6);
+		init.add(3);
+		init.add(7);
+		init.add(5);
+		init.add(4);
+(10 mov)

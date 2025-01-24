@@ -1,0 +1,169 @@
+2024-06-17 23:21:56,132 [myid:] - INFO  [main:QuorumPeerConfig@174] - Reading configuration from: /home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../conf/zoo.cfg
+2024-06-17 23:21:56,164 [myid:] - INFO  [main:QuorumPeerConfig@460] - clientPortAddress is 0.0.0.0:2181
+2024-06-17 23:21:56,165 [myid:] - INFO  [main:QuorumPeerConfig@464] - secureClientPort is not set
+2024-06-17 23:21:56,166 [myid:] - INFO  [main:QuorumPeerConfig@480] - observerMasterPort is not set
+2024-06-17 23:21:56,166 [myid:] - INFO  [main:QuorumPeerConfig@497] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2024-06-17 23:21:56,177 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2024-06-17 23:21:56,178 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2024-06-17 23:21:56,179 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2024-06-17 23:21:56,181 [myid:] - WARN  [main:QuorumPeerMain@138] - Either no config or no quorum defined in config, running in standalone mode
+2024-06-17 23:21:56,201 [myid:] - INFO  [main:ManagedUtil@44] - Log4j 1.2 jmx support found and enabled.
+2024-06-17 23:21:56,245 [myid:] - INFO  [main:QuorumPeerConfig@174] - Reading configuration from: /home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../conf/zoo.cfg
+2024-06-17 23:21:56,247 [myid:] - INFO  [main:QuorumPeerConfig@460] - clientPortAddress is 0.0.0.0:2181
+2024-06-17 23:21:56,247 [myid:] - INFO  [main:QuorumPeerConfig@464] - secureClientPort is not set
+2024-06-17 23:21:56,248 [myid:] - INFO  [main:QuorumPeerConfig@480] - observerMasterPort is not set
+2024-06-17 23:21:56,248 [myid:] - INFO  [main:QuorumPeerConfig@497] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2024-06-17 23:21:56,249 [myid:] - INFO  [main:ZooKeeperServerMain@122] - Starting server
+2024-06-17 23:21:56,332 [myid:] - INFO  [main:ServerMetrics@62] - ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@780cb77
+2024-06-17 23:21:56,347 [myid:] - INFO  [main:FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2024-06-17 23:21:56,386 [myid:] - INFO  [main:ZookeeperBanner@42] - 
+2024-06-17 23:21:56,386 [myid:] - INFO  [main:ZookeeperBanner@42] -   ______                  _                                          
+2024-06-17 23:21:56,387 [myid:] - INFO  [main:ZookeeperBanner@42] -  |___  /                 | |                                         
+2024-06-17 23:21:56,388 [myid:] - INFO  [main:ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2024-06-17 23:21:56,389 [myid:] - INFO  [main:ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2024-06-17 23:21:56,389 [myid:] - INFO  [main:ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2024-06-17 23:21:56,389 [myid:] - INFO  [main:ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2024-06-17 23:21:56,390 [myid:] - INFO  [main:ZookeeperBanner@42] -                                               | |                     
+2024-06-17 23:21:56,390 [myid:] - INFO  [main:ZookeeperBanner@42] -                                               |_|                     
+2024-06-17 23:21:56,390 [myid:] - INFO  [main:ZookeeperBanner@42] - 
+2024-06-17 23:21:56,397 [myid:] - INFO  [main:Environment@98] - Server environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT
+2024-06-17 23:21:56,397 [myid:] - INFO  [main:Environment@98] - Server environment:host.name=DESKTOP-T8TM2LM.
+2024-06-17 23:21:56,398 [myid:] - INFO  [main:Environment@98] - Server environment:java.version=19.0.2
+2024-06-17 23:21:56,398 [myid:] - INFO  [main:Environment@98] - Server environment:java.vendor=Private Build
+2024-06-17 23:21:56,399 [myid:] - INFO  [main:Environment@98] - Server environment:java.home=/usr/lib/jvm/java-19-openjdk-amd64
+2024-06-17 23:21:56,399 [myid:] - INFO  [main:Environment@98] - Server environment:java.class.path=/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../zookeeper-server/target/classes:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../build/classes:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../zookeeper-server/target/lib/*.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../build/lib/*.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/zookeeper-prometheus-metrics-3.6.3.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/zookeeper-jute-3.6.3.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/zookeeper-3.6.3.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/snappy-java-1.1.7.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/slf4j-log4j12-1.7.25.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/slf4j-api-1.7.25.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/simpleclient_servlet-0.6.0.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/simpleclient_hotspot-0.6.0.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/simpleclient_common-0.6.0.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/simpleclient-0.6.0.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-transport-native-unix-common-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-transport-native-epoll-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-transport-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-resolver-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-handler-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-common-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-codec-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/netty-buffer-4.1.63.Final.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/metrics-core-3.2.5.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/log4j-1.2.17.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/json-simple-1.1.1.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jline-2.14.6.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jetty-util-ajax-9.4.39.v20210325.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jetty-util-9.4.39.v20210325.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jetty-servlet-9.4.39.v20210325.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jetty-server-9.4.39.v20210325.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jetty-security-9.4.39.v20210325.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jetty-io-9.4.39.v20210325.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jetty-http-9.4.39.v20210325.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/javax.servlet-api-3.1.0.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jackson-databind-2.10.5.1.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jackson-core-2.10.5.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/jackson-annotations-2.10.5.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/commons-cli-1.2.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../lib/audience-annotations-0.5.0.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../zookeeper-*.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../zookeeper-server/src/main/resources/lib/*.jar:/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin/../conf:
+2024-06-17 23:21:56,400 [myid:] - INFO  [main:Environment@98] - Server environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2024-06-17 23:21:56,401 [myid:] - INFO  [main:Environment@98] - Server environment:java.io.tmpdir=/tmp
+2024-06-17 23:21:56,401 [myid:] - INFO  [main:Environment@98] - Server environment:java.compiler=<NA>
+2024-06-17 23:21:56,403 [myid:] - INFO  [main:Environment@98] - Server environment:os.name=Linux
+2024-06-17 23:21:56,404 [myid:] - INFO  [main:Environment@98] - Server environment:os.arch=amd64
+2024-06-17 23:21:56,404 [myid:] - INFO  [main:Environment@98] - Server environment:os.version=5.15.153.1-microsoft-standard-WSL2
+2024-06-17 23:21:56,405 [myid:] - INFO  [main:Environment@98] - Server environment:user.name=cinderella
+2024-06-17 23:21:56,406 [myid:] - INFO  [main:Environment@98] - Server environment:user.home=/home/cinderella
+2024-06-17 23:21:56,407 [myid:] - INFO  [main:Environment@98] - Server environment:user.dir=/home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/bin
+2024-06-17 23:21:56,407 [myid:] - INFO  [main:Environment@98] - Server environment:os.memory.free=172MB
+2024-06-17 23:21:56,408 [myid:] - INFO  [main:Environment@98] - Server environment:os.memory.max=1000MB
+2024-06-17 23:21:56,408 [myid:] - INFO  [main:Environment@98] - Server environment:os.memory.total=188MB
+2024-06-17 23:21:56,409 [myid:] - INFO  [main:ZooKeeperServer@129] - zookeeper.enableEagerACLCheck = false
+2024-06-17 23:21:56,411 [myid:] - INFO  [main:ZooKeeperServer@137] - zookeeper.digest.enabled = true
+2024-06-17 23:21:56,411 [myid:] - INFO  [main:ZooKeeperServer@141] - zookeeper.closeSessionTxn.enabled = true
+2024-06-17 23:21:56,412 [myid:] - INFO  [main:ZooKeeperServer@1461] - zookeeper.flushDelay=0
+2024-06-17 23:21:56,413 [myid:] - INFO  [main:ZooKeeperServer@1470] - zookeeper.maxWriteQueuePollTime=0
+2024-06-17 23:21:56,413 [myid:] - INFO  [main:ZooKeeperServer@1479] - zookeeper.maxBatchSize=1000
+2024-06-17 23:21:56,414 [myid:] - INFO  [main:ZooKeeperServer@243] - zookeeper.intBufferStartingSizeBytes = 1024
+2024-06-17 23:21:56,419 [myid:] - INFO  [main:BlueThrottle@141] - Weighed connection throttling is disabled
+2024-06-17 23:21:56,425 [myid:] - INFO  [main:ZooKeeperServer@1273] - minSessionTimeout set to 4000
+2024-06-17 23:21:56,427 [myid:] - INFO  [main:ZooKeeperServer@1282] - maxSessionTimeout set to 40000
+2024-06-17 23:21:56,434 [myid:] - INFO  [main:ResponseCache@45] - Response cache size is initialized with value 400.
+2024-06-17 23:21:56,435 [myid:] - INFO  [main:ResponseCache@45] - Response cache size is initialized with value 400.
+2024-06-17 23:21:56,438 [myid:] - INFO  [main:RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2024-06-17 23:21:56,438 [myid:] - INFO  [main:RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2024-06-17 23:21:56,439 [myid:] - INFO  [main:RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2024-06-17 23:21:56,439 [myid:] - INFO  [main:RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2024-06-17 23:21:56,440 [myid:] - INFO  [main:RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2024-06-17 23:21:56,440 [myid:] - INFO  [main:RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2024-06-17 23:21:56,471 [myid:] - INFO  [main:ZooKeeperServer@1498] - The max bytes for all large requests are set to 104857600
+2024-06-17 23:21:56,472 [myid:] - INFO  [main:ZooKeeperServer@1512] - The large request threshold is set to -1
+2024-06-17 23:21:56,473 [myid:] - INFO  [main:ZooKeeperServer@339] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 clientPortListenBacklog -1 datadir /home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/logs/version-2 snapdir /home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/logs/version-2
+2024-06-17 23:21:56,672 [myid:] - INFO  [main:Log@169] - Logging initialized @3599ms to org.eclipse.jetty.util.log.Slf4jLog
+2024-06-17 23:21:56,993 [myid:] - WARN  [main:ContextHandler@1660] - o.e.j.s.ServletContextHandler@2f4948e4{/,null,STOPPED} contextPath ends with /*
+2024-06-17 23:21:56,993 [myid:] - WARN  [main:ContextHandler@1671] - Empty contextPath
+2024-06-17 23:21:57,066 [myid:] - INFO  [main:Server@375] - jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 19.0.2+7-Ubuntu-0ubuntu322.04
+2024-06-17 23:21:57,182 [myid:] - INFO  [main:DefaultSessionIdManager@334] - DefaultSessionIdManager workerName=node0
+2024-06-17 23:21:57,183 [myid:] - INFO  [main:DefaultSessionIdManager@339] - No SessionScavenger set, using defaults
+2024-06-17 23:21:57,189 [myid:] - INFO  [main:HouseKeeper@132] - node0 Scavenging every 660000ms
+2024-06-17 23:21:57,201 [myid:] - WARN  [main:ConstraintSecurityHandler@759] - ServletContext@o.e.j.s.ServletContextHandler@2f4948e4{/,null,STARTING} has uncovered http methods for path: /*
+2024-06-17 23:21:57,238 [myid:] - INFO  [main:ContextHandler@916] - Started o.e.j.s.ServletContextHandler@2f4948e4{/,null,AVAILABLE}
+2024-06-17 23:21:57,287 [myid:] - INFO  [main:AbstractConnector@331] - Started ServerConnector@7e07db1f{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-06-17 23:21:57,288 [myid:] - INFO  [main:Server@415] - Started @4236ms
+2024-06-17 23:21:57,289 [myid:] - INFO  [main:JettyAdminServer@191] - Started AdminServer on address 0.0.0.0, port 8080 and command URL /commands
+2024-06-17 23:21:57,306 [myid:] - INFO  [main:ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2024-06-17 23:21:57,311 [myid:] - WARN  [main:ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2024-06-17 23:21:57,317 [myid:] - INFO  [main:NIOServerCnxnFactory@666] - Configuring NIO connection handler with 10s sessionless connection timeout, 2 selector thread(s), 16 worker threads, and 64 kB direct buffers.
+2024-06-17 23:21:57,322 [myid:] - INFO  [main:NIOServerCnxnFactory@674] - binding to port 0.0.0.0/0.0.0.0:2181
+2024-06-17 23:21:57,372 [myid:] - INFO  [main:WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2024-06-17 23:21:57,373 [myid:] - INFO  [main:WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2024-06-17 23:21:57,374 [myid:] - INFO  [main:ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2024-06-17 23:21:57,375 [myid:] - INFO  [main:ZKDatabase@152] - zookeeper.commitLogCount=500
+2024-06-17 23:21:57,389 [myid:] - INFO  [main:SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2024-06-17 23:21:57,392 [myid:] - INFO  [main:FileSnap@85] - Reading snapshot /home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/logs/version-2/snapshot.5
+2024-06-17 23:21:57,403 [myid:] - INFO  [main:DataTree@1730] - The digest in the snapshot has digest version of 2, , with zxid as 0x5, and digest value as 5771405205
+2024-06-17 23:21:57,455 [myid:] - INFO  [main:ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2024-06-17 23:21:57,457 [myid:] - INFO  [main:FileTxnSnapLog@363] - 4 txns loaded in 22 ms
+2024-06-17 23:21:57,457 [myid:] - INFO  [main:ZKDatabase@289] - Snapshot loaded in 82 ms, highest zxid is 0x9, digest is 7170148697
+2024-06-17 23:21:57,458 [myid:] - INFO  [main:FileTxnSnapLog@470] - Snapshotting: 0x9 to /home/cinderella/Java_28/apache-zookeeper-3.6.3-bin/apache-zookeeper-3.6.3-bin/logs/version-2/snapshot.9
+2024-06-17 23:21:57,460 [myid:] - INFO  [main:ZooKeeperServer@529] - Snapshot taken in 3 ms
+2024-06-17 23:21:57,483 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@136] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2024-06-17 23:21:57,483 [myid:] - INFO  [main:RequestThrottler@74] - zookeeper.request_throttler.shutdownTimeout = 10000
+2024-06-17 23:21:57,528 [myid:] - INFO  [main:ContainerManager@83] - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
+2024-06-17 23:30:41,048 [myid:] - INFO  [SyncThread:0:FileTxnLog@284] - Creating new log file: log.a
+2024-06-17 23:30:44,025 [myid:] - WARN  [NIOWorkerThread-11:NIOServerCnxn@364] - Unexpected exception
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /[0:0:0:0:0:0:0:1]:55378, session = 0x10000168ab20000
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2024-06-17 23:30:48,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000168ab20000, timeout of 4000ms exceeded
+2024-06-17 23:31:44,733 [myid:] - WARN  [NIOWorkerThread-8:NIOServerCnxn@364] - Unexpected exception
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:54176, session = 0x10000168ab20001
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2024-06-17 23:31:48,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000168ab20001, timeout of 4000ms exceeded
+2024-06-17 23:37:38,277 [myid:] - WARN  [NIOWorkerThread-9:NIOServerCnxn@364] - Unexpected exception
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:44010, session = 0x10000168ab20002
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2024-06-17 23:37:42,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000168ab20002, timeout of 4000ms exceeded
+2024-06-17 23:37:57,731 [myid:] - WARN  [NIOWorkerThread-1:NIOServerCnxn@364] - Unexpected exception
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:44024, session = 0x10000168ab20003
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2024-06-17 23:38:02,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000168ab20003, timeout of 4000ms exceeded
+2024-06-17 23:39:09,215 [myid:] - WARN  [NIOWorkerThread-5:NIOServerCnxn@364] - Unexpected exception
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:33180, session = 0x10000168ab20006
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2024-06-17 23:39:10,505 [myid:] - WARN  [NIOWorkerThread-10:NIOServerCnxn@364] - Unexpected exception
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:34952, session = 0x10000168ab20005
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2024-06-17 23:39:11,993 [myid:] - WARN  [NIOWorkerThread-13:NIOServerCnxn@364] - Unexpected exception
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:34946, session = 0x10000168ab20004
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2024-06-17 23:39:14,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000168ab20006, timeout of 4000ms exceeded
+2024-06-17 23:39:14,167 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000168ab20005, timeout of 4000ms exceeded
+2024-06-17 23:39:16,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000168ab20004, timeout of 4000ms exceeded

@@ -1,0 +1,9 @@
+ls [ruta]: muestra los nodos z que existen en un directorio.
+create [ruta]: crea un nodo dentro del directorio de nodos indicado.
+get -s [ruta]: permite visualizar la información de un nodo en particular.
+create -e [ruta]: crea un nodo efímero dentro del directorio de nodos indicado.
+create -e -s [ruta]: crea un nodo efímero con un número secuencial dentro del directorio de nodos indicado.
+set [ruta]: agregar información de texto a un nodo.
+ls -w [ruta]: agregamos un Watcher al nodo para detectar cambios o eventos en él.
+delete [ruta]: elimina un nodo hoja.
+deleteall [ruta]: elimina todos los nodos hoja de manera recursiva sobre el nodo indicado.

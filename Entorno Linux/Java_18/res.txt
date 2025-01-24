@@ -1,0 +1,10 @@
+Tomando en consideración la métrica de razón milisegundos de procesamiento por dólar mensual pagado, calculamos:
+4 instancias de f1-micro: 9.8360 razón milisegundos de procesamiento por dólar mensual pagado
+4 instancias de n1-standard-1: 1.6922 razón milisegundos de procesamiento por dólar mensual pagado
+4 instancias de e2-micro: 6.383 razón milisegundos de procesamiento por dólar mensual pagado
+n1-standard-4: 19.88 milisegundos de procesamiento por dólar mensual pagado
+n1-highcpu-4: 22.69 milisegundos de procesamiento por dólar mensual pagado
+e2-highcpu-4: 25.82 milisegundos de procesamiento por dólar mensual pagado
+
+Aquí, pareciese que las máquinas más poderosas tienen la ventaja; no obstante, el procesamiento que ellas están otorgando es mucho más lento que las instancias repetidas de máquinas más econónimcas; por ende, se descartarán.
+En materia de las instancias múltiples de máquinas más pequeñas, vuelve a ganar la f1-micro que, a pesar de ser ligeramente más lenta que sus competidoras, es mucho más asequible en su precio por bastante.

@@ -1,0 +1,61 @@
+body {
+  background: #ffcccc;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#layout {
+  background: #ffe6e6;
+  border-radius: 10px;
+  padding: 20px 5px 50px;
+  font-size: 25px;
+  text-align: center;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 80%; /* Ajustado para ser un porcentaje del ancho de la ventana */
+  max-width: 1200px; /* Limitar el ancho máximo */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  height: 25px;
+  border: 2px solid #ff99cc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#search_text {
+  width: 70%; /* Ajustado para ser un porcentaje del ancho del contenedor */
+}
+
+button {
+  background: #ff66b2;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e60073;
+}
+
+#results {
+  display: none;
+  white-space: pre-wrap;
+  width: 100%; /* Añadido para ocupar todo el ancho disponible */
+  overflow-x: auto; /* Añadido para permitir el desplazamiento horizontal si es necesario */
+}
+
+#results table {
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border: 1px solid #ff99cc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%; /* Ajustado para ser un porcentaje del contenedor de resultados */
+}
